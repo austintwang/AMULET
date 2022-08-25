@@ -44,7 +44,7 @@ def generateMatrix(data, cellids, unionoverlaps):
 
     regioninfo = dict()
     
-    matrix = np.zeros((len(unionoverlaps), len(cellids)))
+    matrix = np.zeros((len(unionoverlaps), len(cellids)), dtype=np.uint8)
     for i in range(len(data)):
         curchr = data[i,0]
         curstart = data[i,1]
